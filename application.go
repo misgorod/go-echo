@@ -13,7 +13,7 @@ func EchoHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	connStr := "user=pqgotest dbname=pqgotest sslmode=verify-full"
+	connStr := "user=postgres password=Yungleansoset!1488 dbname=pqgotest host=echogodb.cgpygcvzbwp1.eu-central-1.rds.amazonaws.com port=5432"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		fmt.Println(err)
