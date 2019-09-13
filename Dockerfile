@@ -11,7 +11,5 @@ RUN go build -o main
 FROM alpine
 WORKDIR /app
 COPY --from=build /build/main /app/
-RUN adduser -D -S -h /app appuser
-USER appuser
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ./main
