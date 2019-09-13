@@ -1,6 +1,6 @@
 [
   {
-    "name": "echo-go",
+    "name": "echogo",
     "imageUri": "misgorod/echogo:latest"
   }
 ]
