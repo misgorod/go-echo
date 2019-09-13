@@ -1,15 +1,12 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 	"net/http"
 )
 
 func EchoHandler(w http.ResponseWriter, r *http.Request) {
-	body, _ := ioutil.ReadAll(r.Body)
-	w.WriteHeader(http.StatusOK)
-	w.Write(body)
+	_, _ = w.Write([]byte("VERSION 1"))
 }
 
 func main() {
